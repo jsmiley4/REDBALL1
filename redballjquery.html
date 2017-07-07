@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	
+div{
+	position: absolute;
+	left: 50px;
+	width: 90px;
+	height: 90px;
+	margin: 5px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<title></title>
+
+</head>
+
+<body>
+
+<p>Cool Beans!</p>
+
+<button id="up">UP</button>
+<button id="down">DOWN</button>
+<button id ="right">RIGHT</button>
+<button id="left">LEFT</button>
+<button id="rightdown">R.DOWN</button>
+<button id="rightup">R.UP</button>
+<button id="leftdown">L.DOWN</button>
+<button id="leftup">L.UP</button>
+<button id="square">SQUARE</button>
+<button id="triangle">TRIANGLE</button>
+<button id="octagon">OCTAGON</button>
+<button id="hexagon">HEXAGON</button>
+<button id = "alert">ALERT</button>
+<button id="hide">HIDE</button>
+<button id="show">SHOW</button>
+
+<div class="redball">
+<img id="redball" src="redball.jpg">
+</div>
+
+</body>
+<script>
+
+$( "#right" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow");
+});	
+
+$( "#left" ).click(function() {
+  $(".redball").animate({left: "-=50px"},"slow");
+});	
+
+$( "#up" ).click(function() {
+  $(".redball").animate({top: "-=50px"},"slow");
+});	
+
+$( "#down" ).click(function() {
+  $(".redball").animate({top: "+=50px"},"slow");
+});	
+
+$( "#rightdown" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow")
+               .animate({top: "+=50px"},"slow");
+});	
+
+$( "#rightup" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow")
+               .animate({top: "-=50px"},"slow");
+
+});	
+
+$( "#leftdown" ).click(function() {
+  $(".redball").animate({left: "-=50px"},"slow")
+               .animate({top: "+=50px"},"slow");
+});	
+
+$( "#leftup" ).click(function() {
+  $(".redball").animate({left: "-=50px"},"slow")
+               .animate({top: "-=50px"},"slow")
+});	
+
+$( "#square" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow");
+});	
+
+$( "#triangle" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow");
+});	
+
+$( "#octagon" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow");
+});	
+
+$( "#hexagon" ).click(function() {
+  $(".redball").animate({left: "+=50px"},"slow");
+});	
+
+$("#hide").click(function(){
+    $("p").hide();
+});
+
+$("#show").click(function(){
+    $("p").show();
+});
+
+
+$("#alert").click (function(){
+	alert("HELLO");
+});
+</script>
+
+</html>
