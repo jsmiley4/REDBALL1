@@ -100,3 +100,29 @@ window.onload=function(){
 function log(msg){
   document.getElementById('log').innerHTML = document.getElementById('log').innerHTML + "<br>" + msg;
 }
+
+function leftSide(){
+       while(redball.left>=0) {
+           redball.left = redball.left-10
+       }
+   }
+   
+       function rightSide(){
+       var w = window.innerWidth;
+       while(redball.left<=w-100) {
+           redball.left = redball.left+10
+       }
+   }
+
+       function topSide(){
+       while(redball.top>=0) {
+           redball.top=redball.top-10;
+       }   
+   }
+       
+       function bottomSide(){
+       var h = window.innerHeight;
+       while(redball.top<=h-100) {
+           redball.top=redball.top+10;    
+       }
+   }
